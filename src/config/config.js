@@ -1,1 +1,1 @@
-export const IMG_SIZE = '200px';
+export const IMG_SIZE = '100px';

@@ -1,6 +1,5 @@
-// import user from 'user.json';
-import { IMG_SIZE } from 'config/config.js';
+import { Image } from './Avatar.styled';
 
-export const Avatar = ({ imgURL, alt }) => (
-  <img src={imgURL} alt={alt} width={IMG_SIZE}></img>
+export const Avatar = ({ imgURL, name, imgWidth }) => (
+  <Image src={imgURL} alt={name} width={imgWidth}></Image>
 );
