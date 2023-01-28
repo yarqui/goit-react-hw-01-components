@@ -1,4 +1,4 @@
-import user from 'user.json';
+// import user from 'user.json';
 import { IMG_SIZE } from 'config/config.js';
 
 export const Avatar = ({ imgURL, alt }) => (
