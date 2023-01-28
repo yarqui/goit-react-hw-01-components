@@ -8,12 +8,12 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  padding: 15px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   text-align: center;
-
-  /* color: grey; */
+  padding: 15px;
+  width: 100%;
 
   list-style: none;
   font-size: 12px;
@@ -21,13 +21,10 @@ export const Item = styled.li`
   border: 1px solid #e5e5e5;
 `;
 
-export const Span = styled.span`
-  display: flex;
-  flex-direction: column;
+export const Label = styled.span``;
 
+export const Quantity = styled.span`
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #3c3c3c;
-  /* justify-content: center; */
-  /* align-items: center; */
 `;
