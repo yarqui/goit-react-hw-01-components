@@ -48,6 +48,9 @@ export const List = styled.ul`
   justify-content: space-around;
   width: 100%;
   background: #f4f4f4;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 `;
 
 export const Item = styled.li`
@@ -58,10 +61,17 @@ export const Item = styled.li`
   padding: 15px;
   width: 100%;
 
-  list-style: none;
   font-size: 12px;
   line-height: 1.3;
   border: 1px solid #e5e5e5;
+
+  &:first-child {
+    border-bottom-left-radius: 5px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 5px;
+  }
 `;
 
 export const Label = styled.span`

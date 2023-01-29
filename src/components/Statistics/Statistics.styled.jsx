@@ -13,7 +13,7 @@ export const Section = styled.section`
 export const Title = styled.h2`
   padding: 15px;
 
-  color: grey;
+  color: #3c3c3c;
   text-align: center;
   text-transform: uppercase;
 `;
@@ -29,10 +29,18 @@ export const Item = styled.li`
   width: 100%;
   padding: 5px;
 
+  text-align: center;
+
   color: white;
   background: ${getRandomHexColor};
 
-  list-style: none;
+  &:first-child {
+    border-bottom-left-radius: 5px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 5px;
+  }
 `;
 
 export const Label = styled.span`
@@ -42,5 +50,8 @@ export const Label = styled.span`
 
 export const DataValue = styled.span`
   display: block;
-  font-size: 12px;
+
+  margin-top: 5px;
+
+  font-size: 16px;
 `;

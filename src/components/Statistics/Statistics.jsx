@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import { Section, Title } from './Statistics.styled';
-import { renderList } from 'components/utilities/utilities';
+import { renderStatsList } from 'components/utilities/utilities';
 
 export const Statistics = ({ title, stats }) => {
   return (
     <Section>
       {title && <Title>{title}</Title>}
 
-      {renderList(stats)}
+      {renderStatsList(stats)}
     </Section>
   );
 };
