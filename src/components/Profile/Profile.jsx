@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { IMG_SIZE } from 'config/config.js';
 import {
   ProfileWrap,
   Description,
@@ -25,7 +24,7 @@ export const Profile = ({
   return (
     <ProfileWrap>
       <Description>
-        <Image src={image} alt={name} width={IMG_SIZE} />
+        <Image src={image} alt={name} width="100px" />
         <Name>{name}</Name>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
