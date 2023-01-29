@@ -31,6 +31,8 @@ export const Item = styled.li`
 
   text-align: center;
 
+  text-shadow: 0px 0px 3px #424242;
+
   color: white;
   background: ${getRandomHexColor};
 

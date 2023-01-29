@@ -8,10 +8,10 @@ import {
 export const renderStatsList = objects => {
   return (
     <List>
-      {objects.map(object => (
-        <Item key={object.id}>
-          <Label>{object.label}</Label>
-          <DataValue>{object.percentage}</DataValue>
+      {objects.map(({ id, label, percentage }) => (
+        <Item key={id}>
+          <Label>{label}</Label>
+          <DataValue>{percentage}</DataValue>
         </Item>
       ))}
     </List>
